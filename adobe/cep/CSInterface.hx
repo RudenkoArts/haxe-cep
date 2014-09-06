@@ -9,7 +9,7 @@ extern class CSInterface {
 	
 	public function getHostEnvironment():HostEnvironment;
 	public function closeExtension():Void;
-	public function getSystemPath():SystemPath;
+	public function getSystemPath(pathType:SystemPath):String;
 	public function evalScript(script:Script, ?callback:Dynamic -> Void):Void;
 	public function getApplicationID():String;
 	public function getHostCapabilities():HostCapabilities;
