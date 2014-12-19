@@ -28,4 +28,10 @@ extern class CSInterface {
 	public function setScaleFactorChangedHandler(handler:Void -> Void):Void;
 	public function getCurrentApiVersion():ApiVersion;
 	
+	#if (cs_interface_version >= 5.2)
+	public function setPanelFlyoutMenu(menu:String):Void;
+	public function updatePanelMenuItem(menuItemLabel:String, enabled:Bool, checked:Bool):Void;
+	public function setContextMenu(menu:String, callback:String -> Void):Void;
+	public function updateContextMenuItem(menuItemID:String, enabled:Bool, checked:Bool):Void;
+	#end
 }
