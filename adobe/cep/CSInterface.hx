@@ -34,4 +34,19 @@ extern class CSInterface {
 	public function setContextMenu(menu:String, callback:String -> Void):Void;
 	public function updateContextMenuItem(menuItemID:String, enabled:Bool, checked:Bool):Void;
 	#end
+
+	#if (cs_interface_version >= 6)
+	public function setContextMenuByJSON(menu:String, callback:String -> Void):Void;
+	public function isWindowVisible():Bool;
+	public function resizeContent(width:Float, height:Float):Void;
+	#end
+
+	#if (cs_interface_version >= 6.1)
+	public function registerInvalidCertificateCallback(callback:String -> Void):Void;
+	public function registerKeyEventsInterest(keyEventsInterest:Dynamic):Void;
+	public function setWindowTitle(title:String):Void;
+	public function getWindowTitle():String;
+	#end
+
+
 }
