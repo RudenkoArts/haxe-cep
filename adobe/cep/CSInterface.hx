@@ -43,7 +43,7 @@ extern class CSInterface {
 
 	#if (cs_interface_version >= 6.1)
 	public function registerInvalidCertificateCallback(callback:String -> Void):Void;
-	public function registerKeyEventsInterest(keyEventsInterest:Dynamic):Void;
+	public function registerKeyEventsInterest(keyEventsInterest:KeyEventsInterest):Void;
 	public function setWindowTitle(title:String):Void;
 	public function getWindowTitle():String;
 	#end

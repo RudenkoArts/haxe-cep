@@ -5,6 +5,6 @@
 	"tags": ["CSInterface"],
 	"description": "extern for CSInterface(Adobe-CEP/CEP-Resources)",
 	"version": "0.0.1",
-	"contributors": ["tmskst"],
+	"contributors": ["tmskst","RudenkoArts"],
 	"dependencies": { }
 }
